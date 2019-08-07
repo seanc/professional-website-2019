@@ -1,0 +1,15 @@
+backend:
+  name: professional-website-2019
+  repo: seanc/professional-website-2019
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: career_details
+    label: Career Details
+    folder: career_details
+    create: true
+    fields:
+      - { name: detail, label: Detail }
+      # - { name: date, label: Date, widget: date }
+      # - { name: title, label: Title }
+      # - { name: body, label: Body, widget: markdown }
