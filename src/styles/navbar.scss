@@ -1,0 +1,36 @@
+.navbar {
+  height: 100px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    .brand-link {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  
+  .navbar-menu {
+    margin-left: auto;
+    display: flex;
+
+    .menu-item {
+      margin-left: 25px;
+
+      .menu-link {
+        text-transform: uppercase;
+        color: darken(#fff, 25%);
+        transition: 200ms;
+        letter-spacing: 1.5px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}

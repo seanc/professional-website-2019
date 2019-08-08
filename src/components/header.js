@@ -1,25 +1,35 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import '../styles/navbar.scss'
 
 const Header = ({ siteTitle }) => (
   <header>
     <div className="navbar">
-      <div className="navbar-brand">
-        <div className="brand-sticky-logo">
-          <img src="" alt=""/>
+      <div className="container mx-auto h-full">
+        <div className="navbar-brand">
+          <div className="brand-sticky-logo">
+            <img src="" alt=""/>
+          </div>
+          <Link className="brand-link">
+            Sean C. Wilson
+          </Link>
         </div>
-        <Link className="brand-link">
-          Sean C. Wilson
-        </Link>
+        <ul className="navbar-menu">
+          <li className="menu-item">
+            <Link to="/portfolio" className="menu-link">Portfolio</Link>
+          </li>
+          <li className="menu-item">
+            <a href="#" className="menu-link">About Me</a>
+          </li>
+          <li className="menu-item">
+            <a href="#" className="menu-link">Contact Me</a>
+          </li>
+          <li className="menu-item">
+            <a href="#" className="menu-link">Request Resume</a>
+          </li>
+        </ul>
       </div>
-      <ul className="navbar-menu">
-        <li className="menu-item">
-          <a href="#" className="menu-link">Portfolio</a>
-          <a href="#" className="menu-link">About Me</a>
-          <a href="#" className="menu-link"></a>
-        </li>
-      </ul>
     </div>
     {/* <div
       style={{
